@@ -69,4 +69,4 @@ R3 details:<img width="1092" height="258" alt="image" src="https://github.com/us
 
 ## Conclusion
 
-This is a demonstration
+This is a small demonstration of how EIGRP works and how it will dynamically change routes based on detected link failures. This lab is extremely similar to the OSPF lab but understanding the various protocols and the output of these configurations is helpful for a profession in computer networking. As in the case of OSPF, the usefulness of EIGRP is seen more in the real-world where there are dozens of network devices and even more network links between them. Manually changing and detecting link failures would be tedious and unnecessary since we have protocols like this that will automatically adjust; however, note that these protocols do not fix link failures but simply adjust around them.
