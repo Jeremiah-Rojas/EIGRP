@@ -14,4 +14,6 @@
 ## Configurations
 
 Note: It is recommended to copy and paste these commands into the routers. Because of the limited width of the table, some commands, which should be treated as one line, are broken into two lines and entering these commands as two lines will throw an error.
-
+| R1 | R2 | R3 |
+|---|---|---|
+| enable<br>conf t<br>hostname R1<br><br>interface g0/0<br>ip address 192.168.1.1 255.255.255.0<br>no shutdown<br><br>interface g0/1<br>ip address 10.0.12.1 255.255.255.252<br>no shutdown<br><br>interface g0/2<br>ip address 10.0.13.1 255.255.255.252<br>no shutdown<br><br>router eigrp 100<br>no auto-summary<br><br>network 192.168.0.0<br>network 10.0.0.0<br>end<br>wr | enable<br>conf t<br>hostname R2<br><br>interface g0/0<br>ip address 192.168.2.1 255.255.255.0<br>no shutdown<br><br>interface g0/1<br>ip address 10.0.12.2 255.255.255.252<br>no shutdown<br><br>interface g0/2<br>ip address 10.0.23.1 255.255.255.252<br>no shutdown<br><br>router eigrp 100<br>no auto-summary<br><br>network 192.168.0.0<br>network 10.0.0.0<br>end<br>wr | enable<br>conf t<br>hostname R3<br><br>interface g0/0<br>ip address 192.168.3.1 255.255.255.0<br>no shutdown<br><br>interface g0/1<br>ip address 10.0.13.2 255.255.255.252<br>no shutdown<br><br>interface g0/2<br>ip address 10.0.23.2 255.255.255.252<br>no shutdown<br><br>router eigrp 100<br>no auto-summary<br><br>network 192.168.0.0<br>network 10.0.0.0<br>end<br>wr |
