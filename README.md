@@ -52,3 +52,21 @@ Output of “show ip route eigrp”:<img width="1091" height="134" alt="image" s
 - Seq Num: Sequence number is used for packet tracking
 - The “D” in the output of “show ip route eigrp” means EIGRP is in use
 
+
+## Simulating a Broken Link
+<img width="803" height="506" alt="image" src="https://github.com/user-attachments/assets/2314fa45-4e41-42a1-bc6b-9a85fbcb643e" />
+
+<br>
+R1 details:<img width="1089" height="264" alt="image" src="https://github.com/user-attachments/assets/55f13d3a-34aa-4db9-9a21-913a464bfec7" />
+
+
+<br>
+R2 details:<img width="1090" height="226" alt="image" src="https://github.com/user-attachments/assets/f20dc698-27be-47da-a94a-6fe593e4ce6a" />
+<br>No output is shown here because it is directly connected to both nodes and has no other way of reaching them so no EIGRP packets are sent to learn routes.
+
+<br>
+R3 details:<img width="1092" height="258" alt="image" src="https://github.com/user-attachments/assets/68e5699b-f390-43b5-bbfb-c590fa840991" />
+
+## Conclusion
+
+This is a demonstration
