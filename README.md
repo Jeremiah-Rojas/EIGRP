@@ -6,7 +6,7 @@
 <br>The (EIGRP) Enhanced Interior Gateway Routing Protocol works within an autonomous system (AS); an AS is a collection of networks under a single administrative domain. Similar to OSPF, EIGRP will automatically detect link failures and re-route traffic for optimal network performance/reliability. EIGRP is different because it is easier to configure, has very fast convergence time (quickly updates routing table), and is ideal for a network consisting of all Cisco devices; although EIGRP is no longer Cisco-proprietary. This lab shows EIGRP in action and how to configure it.
 
 ### Devices Used:
-- Cisco IOSvL2 15.2.1 switch
+- Cisco IOSv 15.7 router
 - GNS3 Software
 - Ubuntu Container (running on VMware machine)
 
